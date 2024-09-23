@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Signa BW</title>
+    <link href="https://dl.dropbox.com/scl/fi/kukh6cndsd9mfr0a25iuw/signa-bw.css?rlkey=jc6u05jkf0ozopdqypovxhp4p" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/7ef1da7cd8.js" crossorigin="anonymous"></script>
+
+    <style type="text/css">
+        :root {
+            /* Ci-dessous, les 2 couleurs pour le dégradé */
+
+            --perso-color: #ed90e7;
+            --accent-color: #30DB30;
+        }
+    </style>
+</head>
+<body>
+    <div class="signabw"></div>
+
+    <script type="text/javascript">
+  $(document).ready(function() {
+  var mesInfos = [{
+
+
+      nom: `<span>Summer</span> SMITH-WILLIAMS`, //Un mot dans un span pour le mettre en couleur
+
+      dateNaissance: `11/04/2001`, //Sous le format : DD/MM/AAAA
+
+      pronom: `Elle`,
+
+      métier: `Influenceuse`,
+
+      lieu: `Haptos`,
+
+      icone_perso: `https://i.ibb.co/XLrc13m/Cc-A1-Yph-Ww-AAto-Mj-2.jpg`, //Format carré, elle se redimensionne
+
+      album: `soutien`, //soutien, combattant ou collectionneur SANS majuscule
+
+      team_principale: [// Ci-dessous, URL en 32*32
+
+        { sprite_team: `https://www.pokemontrash.com/pokedex/images/minixy/531.png` },
+        { sprite_team: `https://i.imgur.com/lZr4km6.png` },
+        { sprite_team: `https://i.imgur.com/Ktj9jx8.png` },
+        { sprite_team: `https://www.pokemontrash.com/pokedex/images/minixy/703.png` },
+        { sprite_team: `https://www.pokemontrash.com/pokedex/images/minixy/707.png` },
+        { sprite_team: `https://www.pokemontrash.com/pokedex/images/minixy/728.png` }
+
+      ],
+
+      texte: `<span>bondissait sur ses fesses</span> avant d’apprendre à marcher x écoute du <span>heavy métal</span> x <span>se ronge l’ongle</span> de l’annulaire gauche x possède une <span>collection de contes </span>de princesse avec les œuvres d’origine (Grimm, Perrault, …) x ne sait pas compter mentalement x adore la <span>pastèque </span>x est capable de se souvenir de toutes les dates historiques x est fascinée par les <span>garçons de petite taille </span>x collectionne les <span>maillots de bain</span> – peut changer sa tenue plusieurs fois dans une même journée x est tombée amoureuse de l’un de ses professeurs d’histoire x a été opérée du <span>nez </span>x fait semblant d’avoir le pouvoir de contrôler les portes automatiques x est <span>superstitieuse </span>x souffre du <span>syndrome de l’imposteur </span>x se regarde toujours dans une glace avant de sortir x peut manger trois menus <span>hamburgers/frites </span>sans problème x fait du <span>roller </span>x a peur du vide x n’a jamais regardé un film d’horreur x aime jouer à des<span> jeux d’enfants</span> (corde à sauter, loup, marelle, cache-cache, …) x pense que les femmes sont plus intelligentes que les hommes x <span>FA Mulan </span>est sa princesse Disney préférée – bien qu’elle ne soit pas réellement une princesse x elle aimerait porter un <span>porte-bonheur </span>mais ne trouve pas l’objet idéal x crie «<span> hiiiii</span> » pour exprimer sa joie et « <span>hiiiiiiiii</span> » pour exprimer son impatience – c’est la même interjection mais ça ne dure pas le même temps x chante parfois des <span>comptines </span>pour enfants sans même s’en rendre compte x elle est connue dans le monde sous le pseudonyme de <span>Sumairy Lov’</span> x ne refuse jamais de prendre un <span>selfie </span>ou de faire une dédicace – même si cela doit lui faire louper sa séance de cinéma ou son rendez-vous coiffure x vraie<span> cœur d’artichaut </span>mais ça ne dure jamais longtemps x est étrangement très forte au jeu de dames x aime prendre soin de ses <span>vêtements </span>et de ceux des autres x croit au surnaturel – qu’elle appelle ‘<span>supernaturel</span>’ x ne s'est jamais posée de question existentielle x pense que les fourmis sont des êtres remarquables x souhaite devenir l'une des plus grande dresseuse spécialiste du type <span>fée </span>x rêve d'avoir une <span>sœur </span>et un <span>frère</span>`, //Attention à ne pas supprimer les `
+      info1: `Excentrique`,
+      info2: `Enjouée`,
+      info3: `Capricieuse`,
+      info4: `Dispersée`,
+
+      couleur_écriture: `#ed90e7`,
+
+      spé_types: [ //On peut en mettre jusqu'à 3, c/c avec les accolades
+
+          { url_type: `https://www.pokepedia.fr/images/thumb/6/62/Ic%C3%B4ne_Type_F%C3%A9e_HOME.png/30px-Ic%C3%B4ne_Type_F%C3%A9e_HOME.png` },
+          
+          
+      ],
+
+      icone_pokemon: `https://www.pokepedia.fr/images/thumb/e/ec/Sprite_0753_Sh.png/125px-Sprite_0753_Sh.png`, //URL de l'icône, carrée mais se redimensionne
+
+      pokémons: [// Ci-dessous il faut mettre les URL en 32*32, et on peut en rajouter autant qu'on veut, bien tout copier avec les {} accolades et la virgule
+
+          { sprite: `https://www.pokemontrash.com/pokedex/images/minixy/753.png`, surnom: `MIMI`},
+          { sprite: `https://i.ibb.co/5v0f5FV/EkZMcGG.webp`, surnom: `LLOULLOU`},
+		  { sprite: `https://www.pokemontrash.com/pokedex/images/minixy/104.png`, surnom: `OSS'OSS`},
+		  { sprite: `https://www.pokepedia.fr/images/e/e1/Miniature_0774_M%C3%A9t%C3%A9ore_SL.png`, surnom: `MÉMÉ`},
+		  { sprite: `https://www.pokemontrash.com/pokedex/images/minixy/439.png`, surnom: `JUJU`},
+
+
+
+      ],
+
+      badges: [ //Url des signas, badges etc, comme pour les pokémons pour en ajouter il faut coller la ligne avec les accolades
+
+  
+
+    ]}];
+  displaySigna(mesInfos);
+});
+    </script>
+
+    <!-- Ne plus rien toucher en dessous -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+function displaySigna(perso) {
+  var template = ``;
+  perso.forEach(function(info) {
+
+    // CALCUL DE L' ÂGE
+    var from = info.dateNaissance.split("/");
+    var birthdateTimeStamp = new Date(from[2], from[1] - 1, from[0]);
+    var cur = new Date();
+    var diff = cur - birthdateTimeStamp;
+    var currentAge = Math.floor(diff/31557600000);
+
+    //TEAM PRINCIPALE
+    let spriteTeam = "";
+    for (let i = 0; i < info.team_principale.length; i++) {
+      spriteTeam += `<img src="` + info.team_principale[i]["sprite_team"] + `"/>`;
+    }
+
+    //SPÉ TYPES
+    let speTypes = "";
+    for (let i = 0; i < info.spé_types.length; i++) {
+      speTypes += `<div class="signabw_speimg"><img src="` + info.spé_types[i]["url_type"] + `"/></div>`;
+    }
+
+    // BOÎTE POKÉMONS
+    let displayPokemon = "";
+    for (let i = 0; i < info.pokémons.length; i++) {
+      var surnomPoke = info.pokémons[i]["surnom"].replace(/ /g, "&nbsp;");
+      displayPokemon += `<span class="tooltip" title="` + surnomPoke + `"><img src="` + info.pokémons[i]["sprite"] + `"></span>`;
+    }
+    let displayPokeball = "";
+    if( info.pokémons.length < 13 ){
+      for (let i = 0; i < 16; i++) {
+        displayPokeball += `<div class="pokeball"><svg id="balls" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" xml:space="preserve"><g><path d="M18.79,277.51c18.61,0,36.66,0,54.71,0c17.13,0,34.26,0.18,51.39-0.11c4.92-0.09,6.79,1.59,8.19,6.25 c15.81,52.85,62.57,87.82,116.9,87.75c53.94-0.07,100.77-35.23,116.46-87.51c1.04-3.46,1.52-6.5,6.52-6.47 c34.96,0.2,69.92,0.11,104.89,0.15c0.9,0,1.8,0.29,2.67,0.44c-4.63,84.48-83.55,199.73-221.33,205.18 C119.28,488.71,26.62,376.93,18.79,277.51z"/><path d="M481.21,222.09c-2.78,0.15-5.06,0.37-7.35,0.37c-32.85,0.02-65.7-0.11-98.55,0.14c-5.47,0.04-7.53-1.72-9.08-6.95 c-15.39-52.07-62.67-87.26-116.63-87.2c-53.7,0.06-100.86,35.11-116.24,86.78c-1.6,5.37-3.54,7.46-9.46,7.4 c-32.61-0.33-65.23-0.16-97.85-0.16c-2.3,0-4.6,0-6.92,0c4.61-82.73,79.55-193.94,210.92-204.99 C366.02,6.06,469.77,109.65,481.21,222.09z"/><path d="M326.59,250.09c-0.06,42.61-34.54,76.97-77.07,76.79c-42.61-0.17-76.89-34.74-76.63-77.26 c0.27-42.34,34.4-76.34,76.74-76.43C292.19,173.09,326.64,207.52,326.59,250.09z"/></g></svg></div>`;
+      }
+    } else{
+      for (let i = 0; i < info.pokémons.length + 4; i++) {
+        displayPokeball += `<div class="pokeball"><svg id="balls" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" xml:space="preserve"><g><path d="M18.79,277.51c18.61,0,36.66,0,54.71,0c17.13,0,34.26,0.18,51.39-0.11c4.92-0.09,6.79,1.59,8.19,6.25 c15.81,52.85,62.57,87.82,116.9,87.75c53.94-0.07,100.77-35.23,116.46-87.51c1.04-3.46,1.52-6.5,6.52-6.47 c34.96,0.2,69.92,0.11,104.89,0.15c0.9,0,1.8,0.29,2.67,0.44c-4.63,84.48-83.55,199.73-221.33,205.18 C119.28,488.71,26.62,376.93,18.79,277.51z"/><path d="M481.21,222.09c-2.78,0.15-5.06,0.37-7.35,0.37c-32.85,0.02-65.7-0.11-98.55,0.14c-5.47,0.04-7.53-1.72-9.08-6.95 c-15.39-52.07-62.67-87.26-116.63-87.2c-53.7,0.06-100.86,35.11-116.24,86.78c-1.6,5.37-3.54,7.46-9.46,7.4 c-32.61-0.33-65.23-0.16-97.85-0.16c-2.3,0-4.6,0-6.92,0c4.61-82.73,79.55-193.94,210.92-204.99 C366.02,6.06,469.77,109.65,481.21,222.09z"/><path d="M326.59,250.09c-0.06,42.61-34.54,76.97-77.07,76.79c-42.61-0.17-76.89-34.74-76.63-77.26 c0.27-42.34,34.4-76.34,76.74-76.43C292.19,173.09,326.64,207.52,326.59,250.09z"/></g></svg></div>`;
+      }
+    }
+
+    //BADGES ET SIGNAS
+    let displayBadge = "";
+    for (let i = 0; i < info.badges.length; i++) {
+      displayBadge += `<img src="` + info.badges[i]["url_badge"] + `" style="height: 213px !important; margin-bottom: 0px !important;" />`;
+    }
+
+
+    // TEMPLATE DE LA SIGNA
+      template += `<div class="signabw_onglets"><div class="signabw_onglet1">Résumé</div><div class="signabw_onglet3">Pokémons</div><div class="signabw_onglet4">Badges</div></div><div class="signabw_all"><div class="signabw_general onglet2"><div class="signabw_cover" style="background-image: url(` + info.url_couverture + `);"></div></div><div class="signabw_general onglet1"><div class="signabw_name">` + info.nom + `</div><div class="signabw_character"><div class="signabw_character_left"><div class="signabw_icone"><img src="` + info.icone_perso + `"></div><div class="signabw_infos"><div class="small">` + currentAge + ` ans</div><div class="small">` + info.pronom + `</div><div class="large"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> ` + info.métier + `</div><div class="large"><i class="fa-solid fa-location-dot"></i> ` + info.lieu + `</div></div><div class="signabw_spetype album"><div class="signabw_title">Album <span>` + info.album + `</span></div><hr style="background: var(--` + info.album + `);"/><div class="signabw_speright"><svg style="fill: var(--` + info.album + `);" version="1.1" id="icone_cliche" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" xml:space="preserve"><g><g><path d="M252.5,419.1c-12.03-30.23-33.57-39.43-55.68-47.86c-48.95-18.66-66.55-44.93-67.95-97.54 c-0.5-18.66,5.81-18.43,19.23-11.28c41.78,22.25,82.51,45.52,103.7,94.92c21.96-48.8,62.88-72.83,105.1-95.45 c14.83-7.94,19.55-4.64,18.47,12.69c-2.97,48.08-19.89,84.46-70.86,98.28C283.15,378.66,263.69,389.67,252.5,419.1z"></path><path d="M289.18,283.73c6.47-23.27,13.6-46.27,17.83-70.2c2.78-15.74,2.11-30.75-1.57-45.81c-7.98-32.72-28.48-48.96-58.48-46.98 c-25.69,1.7-45.91,24.17-49.28,55.1c-4.07,37.29,6.24,72.24,19.69,108.57c-42.87-36.01-59.65-117.08-35.28-162.84 c16.88-31.7,50.12-46.1,89.57-38.81c33.41,6.17,58.51,37.74,62.25,78.29C337.58,200.74,320.25,250.15,289.18,283.73z"></path><path d="M83.14,143.39c19.31,4.55,35.57,11.55,51.49,19.51c15.52,7.76,25.42,19.37,28.09,37.06c3.65,24.21,14.46,45.99,26.3,68.74 C97.66,236.73,91.86,229.92,83.14,143.39z"></path><path d="M421.8,142.91c-1.85,27.79-6.38,52.17-15.98,75.54c-4.6,11.21-12.92,18.76-24.26,22.5 c-22.25,7.34-42.88,18.16-67.68,32.13c15.38-30.8,22.26-59.99,33.11-87.12C358.75,156.57,392.07,152.69,421.8,142.91z"></path><path d="M482.91,220.6c-23.09,17.1-36.91,37.96-48,62.43c-12.72,28.08-36.22,46.64-67.57,63.08 c13.91-30.54,16.06-59.33,20.78-87.8c4.3-25.95,29.55-32.73,51.88-37.2C453.78,218.35,468.57,220.6,482.91,220.6z"></path><path d="M134.32,342.58c-33.33-16.85-58.87-39.76-71.82-73.85c-7.96-20.96-26.02-31.75-45.42-46.89 c36.19-4.31,66.69-3.27,92.05,22.2c5.55,5.57,9.76,10.94,9.66,18.46C118.43,290.11,122.67,316.77,134.32,342.58z"></path><path d="M251.63,168.03c35.81,45.57,35.45,90.77,1.42,134.86C216.93,264.68,216.24,230.21,251.63,168.03z"></path></g></g></svg></div></div><div class="signabw_team"><div class="signabw_title">Team <span>principale</span></div><div class="signabw_teampoke"><div class="pokeball"><svg id="balls" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" xml:space="preserve"><g><path d="M18.79,277.51c18.61,0,36.66,0,54.71,0c17.13,0,34.26,0.18,51.39-0.11c4.92-0.09,6.79,1.59,8.19,6.25 c15.81,52.85,62.57,87.82,116.9,87.75c53.94-0.07,100.77-35.23,116.46-87.51c1.04-3.46,1.52-6.5,6.52-6.47 c34.96,0.2,69.92,0.11,104.89,0.15c0.9,0,1.8,0.29,2.67,0.44c-4.63,84.48-83.55,199.73-221.33,205.18 C119.28,488.71,26.62,376.93,18.79,277.51z"></path><path d="M481.21,222.09c-2.78,0.15-5.06,0.37-7.35,0.37c-32.85,0.02-65.7-0.11-98.55,0.14c-5.47,0.04-7.53-1.72-9.08-6.95 c-15.39-52.07-62.67-87.26-116.63-87.2c-53.7,0.06-100.86,35.11-116.24,86.78c-1.6,5.37-3.54,7.46-9.46,7.4 c-32.61-0.33-65.23-0.16-97.85-0.16c-2.3,0-4.6,0-6.92,0c4.61-82.73,79.55-193.94,210.92-204.99 C366.02,6.06,469.77,109.65,481.21,222.09z"></path><path d="M326.59,250.09c-0.06,42.61-34.54,76.97-77.07,76.79c-42.61-0.17-76.89-34.74-76.63-77.26 c0.27-42.34,34.4-76.34,76.74-76.43C292.19,173.09,326.64,207.52,326.59,250.09z"></path></g></svg></div><div class="pokeball"><svg id="balls" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" xml:space="preserve"><g><path d="M18.79,277.51c18.61,0,36.66,0,54.71,0c17.13,0,34.26,0.18,51.39-0.11c4.92-0.09,6.79,1.59,8.19,6.25 c15.81,52.85,62.57,87.82,116.9,87.75c53.94-0.07,100.77-35.23,116.46-87.51c1.04-3.46,1.52-6.5,6.52-6.47 c34.96,0.2,69.92,0.11,104.89,0.15c0.9,0,1.8,0.29,2.67,0.44c-4.63,84.48-83.55,199.73-221.33,205.18 C119.28,488.71,26.62,376.93,18.79,277.51z"></path><path d="M481.21,222.09c-2.78,0.15-5.06,0.37-7.35,0.37c-32.85,0.02-65.7-0.11-98.55,0.14c-5.47,0.04-7.53-1.72-9.08-6.95 c-15.39-52.07-62.67-87.26-116.63-87.2c-53.7,0.06-100.86,35.11-116.24,86.78c-1.6,5.37-3.54,7.46-9.46,7.4 c-32.61-0.33-65.23-0.16-97.85-0.16c-2.3,0-4.6,0-6.92,0c4.61-82.73,79.55-193.94,210.92-204.99 C366.02,6.06,469.77,109.65,481.21,222.09z"></path><path d="M326.59,250.09c-0.06,42.61-34.54,76.97-77.07,76.79c-42.61-0.17-76.89-34.74-76.63-77.26 c0.27-42.34,34.4-76.34,76.74-76.43C292.19,173.09,326.64,207.52,326.59,250.09z"></path></g></svg></div><div class="pokeball"><svg id="balls" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" xml:space="preserve"><g><path d="M18.79,277.51c18.61,0,36.66,0,54.71,0c17.13,0,34.26,0.18,51.39-0.11c4.92-0.09,6.79,1.59,8.19,6.25 c15.81,52.85,62.57,87.82,116.9,87.75c53.94-0.07,100.77-35.23,116.46-87.51c1.04-3.46,1.52-6.5,6.52-6.47 c34.96,0.2,69.92,0.11,104.89,0.15c0.9,0,1.8,0.29,2.67,0.44c-4.63,84.48-83.55,199.73-221.33,205.18 C119.28,488.71,26.62,376.93,18.79,277.51z"></path><path d="M481.21,222.09c-2.78,0.15-5.06,0.37-7.35,0.37c-32.85,0.02-65.7-0.11-98.55,0.14c-5.47,0.04-7.53-1.72-9.08-6.95 c-15.39-52.07-62.67-87.26-116.63-87.2c-53.7,0.06-100.86,35.11-116.24,86.78c-1.6,5.37-3.54,7.46-9.46,7.4 c-32.61-0.33-65.23-0.16-97.85-0.16c-2.3,0-4.6,0-6.92,0c4.61-82.73,79.55-193.94,210.92-204.99 C366.02,6.06,469.77,109.65,481.21,222.09z"></path><path d="M326.59,250.09c-0.06,42.61-34.54,76.97-77.07,76.79c-42.61-0.17-76.89-34.74-76.63-77.26 c0.27-42.34,34.4-76.34,76.74-76.43C292.19,173.09,326.64,207.52,326.59,250.09z"></path></g></svg></div><div class="pokeball"><svg id="balls" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" xml:space="preserve"><g><path d="M18.79,277.51c18.61,0,36.66,0,54.71,0c17.13,0,34.26,0.18,51.39-0.11c4.92-0.09,6.79,1.59,8.19,6.25 c15.81,52.85,62.57,87.82,116.9,87.75c53.94-0.07,100.77-35.23,116.46-87.51c1.04-3.46,1.52-6.5,6.52-6.47 c34.96,0.2,69.92,0.11,104.89,0.15c0.9,0,1.8,0.29,2.67,0.44c-4.63,84.48-83.55,199.73-221.33,205.18 C119.28,488.71,26.62,376.93,18.79,277.51z"></path><path d="M481.21,222.09c-2.78,0.15-5.06,0.37-7.35,0.37c-32.85,0.02-65.7-0.11-98.55,0.14c-5.47,0.04-7.53-1.72-9.08-6.95 c-15.39-52.07-62.67-87.26-116.63-87.2c-53.7,0.06-100.86,35.11-116.24,86.78c-1.6,5.37-3.54,7.46-9.46,7.4 c-32.61-0.33-65.23-0.16-97.85-0.16c-2.3,0-4.6,0-6.92,0c4.61-82.73,79.55-193.94,210.92-204.99 C366.02,6.06,469.77,109.65,481.21,222.09z"></path><path d="M326.59,250.09c-0.06,42.61-34.54,76.97-77.07,76.79c-42.61-0.17-76.89-34.74-76.63-77.26 c0.27-42.34,34.4-76.34,76.74-76.43C292.19,173.09,326.64,207.52,326.59,250.09z"></path></g></svg></div><div class="pokeball"><svg id="balls" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" xml:space="preserve"><g><path d="M18.79,277.51c18.61,0,36.66,0,54.71,0c17.13,0,34.26,0.18,51.39-0.11c4.92-0.09,6.79,1.59,8.19,6.25 c15.81,52.85,62.57,87.82,116.9,87.75c53.94-0.07,100.77-35.23,116.46-87.51c1.04-3.46,1.52-6.5,6.52-6.47 c34.96,0.2,69.92,0.11,104.89,0.15c0.9,0,1.8,0.29,2.67,0.44c-4.63,84.48-83.55,199.73-221.33,205.18 C119.28,488.71,26.62,376.93,18.79,277.51z"></path><path d="M481.21,222.09c-2.78,0.15-5.06,0.37-7.35,0.37c-32.85,0.02-65.7-0.11-98.55,0.14c-5.47,0.04-7.53-1.72-9.08-6.95 c-15.39-52.07-62.67-87.26-116.63-87.2c-53.7,0.06-100.86,35.11-116.24,86.78c-1.6,5.37-3.54,7.46-9.46,7.4 c-32.61-0.33-65.23-0.16-97.85-0.16c-2.3,0-4.6,0-6.92,0c4.61-82.73,79.55-193.94,210.92-204.99 C366.02,6.06,469.77,109.65,481.21,222.09z"></path><path d="M326.59,250.09c-0.06,42.61-34.54,76.97-77.07,76.79c-42.61-0.17-76.89-34.74-76.63-77.26 c0.27-42.34,34.4-76.34,76.74-76.43C292.19,173.09,326.64,207.52,326.59,250.09z"></path></g></svg></div><div class="pokeball"><svg id="balls" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" xml:space="preserve"><g><path d="M18.79,277.51c18.61,0,36.66,0,54.71,0c17.13,0,34.26,0.18,51.39-0.11c4.92-0.09,6.79,1.59,8.19,6.25 c15.81,52.85,62.57,87.82,116.9,87.75c53.94-0.07,100.77-35.23,116.46-87.51c1.04-3.46,1.52-6.5,6.52-6.47 c34.96,0.2,69.92,0.11,104.89,0.15c0.9,0,1.8,0.29,2.67,0.44c-4.63,84.48-83.55,199.73-221.33,205.18 C119.28,488.71,26.62,376.93,18.79,277.51z"></path><path d="M481.21,222.09c-2.78,0.15-5.06,0.37-7.35,0.37c-32.85,0.02-65.7-0.11-98.55,0.14c-5.47,0.04-7.53-1.72-9.08-6.95 c-15.39-52.07-62.67-87.26-116.63-87.2c-53.7,0.06-100.86,35.11-116.24,86.78c-1.6,5.37-3.54,7.46-9.46,7.4 c-32.61-0.33-65.23-0.16-97.85-0.16c-2.3,0-4.6,0-6.92,0c4.61-82.73,79.55-193.94,210.92-204.99 C366.02,6.06,469.77,109.65,481.21,222.09z"></path><path d="M326.59,250.09c-0.06,42.61-34.54,76.97-77.07,76.79c-42.61-0.17-76.89-34.74-76.63-77.26 c0.27-42.34,34.4-76.34,76.74-76.43C292.19,173.09,326.64,207.52,326.59,250.09z"></path></g></svg></div></div><div class="signabw_pokemon">` + spriteTeam + `</div></div></div><div class="signabw_character_right"><div class="signabw_desc">` + info.texte + `</div><div class="signabw_adj"><div>` + info.info1 + `</div><div>` + info.info2 + `</div><div>` + info.info3 + `</div><div>` + info.info4 + `</div><div class="signabw_hexa">` + info.couleur_écriture + `</div></div></div></div></div><div class="signabw_general onglet3"><div class="signabw_name">Boîte<span> Pokémon</span></div><div class="signabw_character"><div class="signabw_character_left box_pokemon"><div class="signabw_spetype"><div class="signabw_title">Spé <span>types</span></div><hr/><div class="signabw_speright">` + speTypes + `</div></div><div class="signabw_boxicone_wrap"><div class="signabw_boxicone"><img src="` + info.icone_pokemon + `" style="filter: none !important;"/></div></div></div><div class="signabw_character_right box_pokemon"><div class="mybox"><div class="signabw_teampoke box_pokemon">` + displayPokeball + `</div><div class="signabw_pokemon box_pokemon">` + displayPokemon + `</div></div></div></div></div><div class="signabw_general onglet4"><div class="signabw_badge"><div class="signabw_blocbadge"><center>` + displayBadge + `<center></div></div></div></div>`;
+  });
+  $('.signabw').html(template);
+
+  // SYSTÈME D'ONGLETS
+  $('.signabw_onglet1').click(function(){
+    $('.signabw_onglet2, .signabw_onglet3, .signabw_onglet4').css('opacity', '0.7');
+    $(this).css('opacity', '1');
+    $('.onglet2').css('display', 'none');
+    $('.onglet3').css('display', 'none');
+    $('.onglet4').css('display', 'none');
+    $('.onglet1').css('display', 'block');
+  });
+  $('.signabw_onglet2').click(function () {
+    $('.signabw_onglet1, .signabw_onglet3, .signabw_onglet4').css('opacity', '0.7');
+    $(this).css('opacity', '1');
+    $('.onglet1').css('display', 'none');
+    $('.onglet3').css('display', 'none');
+    $('.onglet4').css('display', 'none');
+    $('.onglet2').css('display', 'block');
+  });
+  $('.signabw_onglet3').click(function(){
+    $('.signabw_onglet1, .signabw_onglet2, .signabw_onglet4').css('opacity', '0.7');
+    $(this).css('opacity', '1');
+    $('.onglet1').css('display', 'none');
+    $('.onglet2').css('display', 'none');
+    $('.onglet4').css('display', 'none');
+    $('.onglet3').css('display', 'block');
+  });
+  $('.signabw_onglet4').click(function(){
+    $('.signabw_onglet1, .signabw_onglet2, .signabw_onglet3').css('opacity', '0.7');
+    $(this).css('opacity', '1');
+    $('.onglet1').css('display', 'none');
+    $('.onglet2').css('display', 'none');
+    $('.onglet3').css('display', 'none');
+    $('.onglet4').css('display', 'block');
+  });
+}
+
+$( function() {
+  // tooltip
+function onHoverToggleTooltip( e ) {
+  var   $this = $( this ),
+    title = $this.attr( 'title' ),
+    type  = e.type,
+    offset  = $this.offset(),
+    xOffset = e.pageX - offset.left - 20,
+    yOffset = e.pageY - offset.top + 20;
+
+  if( type == 'mouseenter' ) {
+    $this.data( 'tipText', title ).removeAttr( 'title' );
+    $this.append( '<span class="title">' + title + '</span>' ).hide().fadeIn(0);
+    $this.find ( '.title' )
+      .css( 'top', ( yOffset ) + 'px' )
+      .css( 'left', ( xOffset ) + 'px' );
+  } else if ( type == 'mouseleave' ) {
+    $this.attr( 'title', $this.data( 'tipText' ) );
+    $this.find ( '.title' ).fadeOut().remove();
+  } else if ( type == 'mousemove' ) {
+    $this.find ( '.title' )
+      .css( 'top', ( yOffset ) + 'px' )
+      .css( 'left', ( xOffset ) + 'px' );
+  }
+
+}
+
+$( document.querySelectorAll( '.tooltip' ) ).on({
+   mouseenter: onHoverToggleTooltip,
+   mouseleave: onHoverToggleTooltip,
+   mousemove: onHoverToggleTooltip
+});
+});
+
+
+    </script>
+</body>
+</html>
